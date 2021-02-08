@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+   	<title>1111</title>
+   	<meta charset="utf-8">
+   	<style>
+   		.blue {
+   			color: blue;
+   		}
+   
+   		.red {
+   			color: red;
+   		}
+   	</style>
+   </head>
+   <body>
+   	<h1>test: jQuery</h1>
+   	クリックしたら色を変える
+   
+   	<hr>
+   
+   	<img src="gazo/duke.png" width="300">
+   
+   	<hr>
+   
+   	<ul>
+   		<li>apple</li>
+   		<li>banana</li>
+   		<li>grape</li>
+   		<li>strawberry</li>
+   	</ul>
+   
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   	<script>
+   		$(function(){
+   			// h1をクリックした時の処理
+   			$("h1").on("click", function(){
+   				$(this).addClass("blue");
+   			});
+   
+   			// imgをクリックした時の処理
+   			$("img").on("click", function(){
+   				$(this).attr("src", "gazo/gnu.png");
+   			});
+   
+   
+   			// データをつくる
+   			let apple = 1;
+   			// liをクリックしたら text を変更する
+   			$("li").on("click", function(){
+   				if( apple == 1 ) {
+   					$(this).text("ALOHA!").addClass("red");
+   					apple = 0;
+   				} else {
+   					$(this).text("apple").removeClass("red");
+   					apple = 1;
+   				}
+   			});
+   		})
+   	</script>
+   
+   </body>
+   </html>

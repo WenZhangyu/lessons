@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flexbox</title>
+	<meta charset="utf-8">
+</head>
+<style>
+	div
+	{
+		background-color: #cccccc;
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+	.menu
+	{
+		display: flex;
+	}
+	.menu > div
+	{
+		flex: 1;
+	}
+</style>
+<body>
+	<h1>flexbox</h1>
+	<hr>
+	<div class="menu">
+		<div style="background-color: #00FF00" align="center"><a href="#oh"> oh </a></div>
+		<div style="background-color: #00FFFF" align="center"><a href="#my"> my </a></div>
+		<div style="background-color: #FFFF00" align="center"><a href="#god"> god </a></div>
+		<div style="background-color: #FF0000" align="center"><a href="#!"> ! </a></div>
+	</div>
+</body>
+</html>

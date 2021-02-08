@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sefl</title>
+<style>
+	#self
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 70%;	
+	}
+	#duke
+	{
+		width: 60%;
+	}
+	#shark
+	{
+		width: 50%;
+	}	
+	.gridstyle
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: auto auto;
+		grid-gap: 50px;
+		align-items: center;
+		justify-content: center;
+		margin-left: 600px;
+	}
+</style>
+</head>
+<body>
+	<img id="self" src="me.jpg">
+	<h1 align="center">文章宇</h1>
+
+	<div class="gridstyle">
+		<div><img id="duke" src="duke.png">
+		<br>
+		<p>
+			綺麗な写真
+		</p>
+	    </div>
+		<div><img id="shark" src="shark.jpg">
+		<br>
+		<p>
+			可愛い子
+		</p>
+		</div>
+	</div>
+	<h2 align="center">左は１　右は２</h2>
+	<form align="center">
+    どちらが好き？<br>
+    1<input type="radio" name="food">
+    2<input type="radio" name="food">
+  </form>
+</body>
+</html>

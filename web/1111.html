@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1111</title>
+	<meta charset="utf-8">
+	<style>
+		.blue{
+			color:blue;
+		}
+		.red{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+		<img src="duke.png" width="300">
+		<hr>
+       <ul>
+        	<li>apple</li>
+   			<li>banana</li>
+   			<li>grape</li>
+   			<li>strawberry</li>
+       </ul>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+     	$("img").on("click",function(){
+     		$(this).attr("src","shark.png")
+     	});
+
+
+
+
+     	let apple = 1;
+     	const fruits = ["apple","banana","grape","strawberry"];
+
+       $("li").on("click", function(){
+         if (apple == 1){
+         	$(this).text("ALOHA!").addClass("red");
+         	apple = 0;
+     }else{
+     		const num = $(this).index();
+     		$(this).text( fruits[num] ).removeClass("red");
+     	 	apple = 1;
+        }
+       });
+
+   </script>
+</body>
+</html>
