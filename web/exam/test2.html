@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>練習</title>
+</head>
+<body>
+	<h1>練習3</h1>
+	<hr>
+	<ul>
+		<li class = "sakana">ぶり</li>
+		<li class = "sakana">はまち</li>
+		<li class = "sakana">たい</li>
+		<li class = "sakana" id  = "maguro">まぐろ</li>
+		<li class = "sakana">こはだ</li>
+	</ul>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$("li").on("click",function(){
+			$(this).hide("slow");
+ 		});
+		})
+		
+	</script>
+
+</body>
+</html>
