@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>練習</title>
+</head>
+<body>
+	<h1>練習9</h1>
+	<hr>
+	<img src="img.png" width="300px" id="rua">
+	<img src="img2.jpg" width="300px" id="rua2" hidden="">
+	<img src="img3.jpg" width="300px" id="rua3" hidden="">
+	<img src="img4.jpg" width="300px" id="rua4" hidden="">
+	<hr>
+	<h2 id="hu">shark</h2>
+	<hr>
+	<button id="zuo">←</button>
+	<button id="you">→</button>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(function(){
+				var we = 1;
+				var gg = ["img.png",
+						  "img2.jpg",
+						  "img3.jpg",
+						  "img4.jpg"];
+				var zi = ["shark",
+						  "modII",
+						  "g11",
+						  "skadi"];
+			$("#you").on("click",function(){
+				if(we < gg.length)
+				{
+					$("#rua").attr("src",gg[we]);
+					$("#hu").text(zi[we]);
+					we++;
+				}
+				else
+				{
+					$("#rua").attr("src",gg[0]);
+					$("#hu").text(zi[0]);
+					we=1;	
+				}
+			});
+		})
+		</script>
+</body>
+</html>
